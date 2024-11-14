@@ -9,7 +9,7 @@ const coordinatesDiv = document.getElementById('coordinates');
 
 // Create the signature image
 const image = new Image(); 
-image.src = 'CMD-assinatura.png';
+image.src = 'cmdsign.png';
 
 // Define the scale of the file and the page number selected by default
 var ascale = 1.0;
