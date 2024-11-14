@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <style>
+        #layers {
+            position: relative;
+        }
+        #pdf-canvas,
+        #sig-canvas{
+            border: 1px solid black;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #corrdinates {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="layers">
+        <canvas id="pdf-canvas"></canvas>
+        <canvas id="sig-canvas"></canvas>
+    </div>
+    <div id="coordinates"></div>
+</body>
+<footer>
+    <script src="pdf.js"></script>
+    <script src="pdf.worker.js"></script>
+    <script src="app.js"></script>
+</footer>
+</html>
